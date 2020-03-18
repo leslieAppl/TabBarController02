@@ -100,7 +100,28 @@
                     <view key="view" contentMode="scaleToFill" id="fQR-u8-dxv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kls-gS-Rcb">
+                                <rect key="frame" x="0.0" y="418" width="414" height="60"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="U86-Tb-Kxo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="28"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DYV-cm-Pka" kind="show" id="PwP-3M-Rw3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kls-gS-Rcb" firstAttribute="leading" secondItem="IhC-pY-HgF" secondAttribute="leading" id="nfs-LL-bfS"/>
+                            <constraint firstItem="kls-gS-Rcb" firstAttribute="centerY" secondItem="fQR-u8-dxv" secondAttribute="centerY" id="oxj-xC-XtJ"/>
+                            <constraint firstItem="IhC-pY-HgF" firstAttribute="trailing" secondItem="kls-gS-Rcb" secondAttribute="trailing" id="yEI-rW-KpM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IhC-pY-HgF"/>
                     </view>
                     <navigationItem key="navigationItem" id="cZo-i3-NIN"/>
@@ -108,6 +129,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHE-BS-qex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1690" y="-307"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5ge-4Q-Z0i">
+            <objects>
+                <viewController id="DYV-cm-Pka" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E9x-NF-AZy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="e9h-Gw-zFU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vqe-wj-s3f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ss7-7g-cEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390" y="-307"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
