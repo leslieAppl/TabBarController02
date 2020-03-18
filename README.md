@@ -6,5 +6,6 @@ source: by Sean Allen
 - Customizing Tab Bar Item in Storyboard Interface
 
 - Customizing Tab Bar Item on Code
+- Using UITabBar.appearance( ) method in AppDelegate class
 
 
