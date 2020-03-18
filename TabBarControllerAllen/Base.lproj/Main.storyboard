@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Notifications-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="TabBarControllerAllen" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="131.5" y="426.5" width="151" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -36,13 +36,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-793" y="423"/>
         </scene>
-        <!--Second-->
+        <!--Favourite-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TabBarControllerAllen" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
                                 <rect key="frame" x="106" y="426.5" width="202" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -71,13 +71,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="heart" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-123" y="423"/>
         </scene>
-        <!--Item-->
+        <!--Money-->
         <scene sceneID="yDD-Cg-Z5i">
             <objects>
                 <viewController id="aNM-tC-yQ0" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="EKP-lo-FSE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QZw-t4-bHJ"/>
+                    <tabBarItem key="tabBarItem" title="Money" image="coins" id="QZw-t4-bHJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNu-8i-qGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,11 +166,11 @@
             </objects>
             <point key="canvasLocation" x="-123" y="-307"/>
         </scene>
-        <!--Item-->
+        <!--Chart-->
         <scene sceneID="Rzh-TH-y2y">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rRr-W0-UmE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zBL-wD-DRi"/>
+                    <tabBarItem key="tabBarItem" title="Chart" image="bar_chart" id="zBL-wD-DRi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r3r-Aj-bRa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -187,7 +187,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="bar_chart" width="30" height="30"/>
+        <image name="bell" width="30" height="30"/>
+        <image name="coins" width="30" height="30"/>
+        <image name="heart" width="30" height="30"/>
     </resources>
 </document>
